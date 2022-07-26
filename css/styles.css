@@ -1,0 +1,102 @@
+/*******COLORES********/
+:root{
+    --color-backgrounds:#293462;
+    --color-bar:#EC9B3B;
+    --color-bottoms:#F24C4C;
+    --color-articules:#F7D716;
+}
+
+/********FONTS*******/
+@font-face {
+    font-family: 'mukta';
+    src: url(../font/mukta/Mukta-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'vt323';
+    src: url(../font/VT323/VT323-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: var(--color-backgrounds);
+}
+
+
+/****ARROW*****/
+.to-up{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    background-color: var(--color-bar);
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+/*DESKTOP VIEW*/
+#header{
+    background-color: var(--color-bar);
+    font-family: 'mukta';
+    font-size: 1.2em;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4em;
+    color: rgb(23, 32, 101);
+}
+
+
+#logo p{
+    display: inline-block;
+    font-size: 1.4em;
+    padding: 14px 6px 0 6px;
+    user-select: none;
+    
+
+}
+#about__list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+#about__list,#contact{
+    padding: 14px 6px;
+}
+#about__list a, #contact a{
+    display:inline-block;
+    border-radius: 25px;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(23, 32, 101);
+    transition-duration: .5s;
+}
+
+#about__list a:hover{
+    color: var(--color-articules);
+    background-color: #293462;
+}
+
+#contact a:first-child:hover{
+    color: aliceblue;
+    background: #f4ff00;
+background: linear-gradient(47deg,#f4ff00 10%, #ff00d0 70%);
+background: -webkit-linear-gradient(47deg,#f4ff00 10%, #ff00d0 70%);
+background: -moz-linear-gradient(47deg,#f4ff00 10%, #ff00d0 70%);
+}
+
+#contact a:nth-child(2):hover{
+    color:whitesmoke ;
+    background-color: hsl(210deg 90% 40%);
+}
+
+#contact a:last-child:hover{
+    color: var(--color-articules);
+    background-color: #293462;
+}
