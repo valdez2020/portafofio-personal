@@ -1,7 +1,8 @@
 
-let arrow = document.getElementsByClassName('.to-up');
+let arrow = document.querySelector('.to-up');
 
-
-const GoUp = (arrow) => {
-    
-}
+arrow.addEventListener("click",() => {
+    arrow.animate({
+        scrollTop: 0
+    },1000);
+})

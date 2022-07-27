@@ -15,29 +15,102 @@
     <!--start header-->
     <header id="header">
         <nav id="navbar">
-            <div id="logo">
-            <p>José Valdez</p>
+            <div class="logo typewriter">
+                <div class="arrow"><img src="img/arrow-right.png" alt=""></div>
+                <p>José Valdez</p>
+                <div class="dev"><img src="img/dev-logo.png" alt=""></div>
             </div>
 
             <div id="about">
                 <ul id="about__list">
-                    <li class="about__list__item"><a href="#">¿Quien soy?</a></li>
-                    <li class="about__list__item"><a href="#">habilidades</a></li>
-                    <li class="about__list__item"><a href="#">Hobbies</a></li>
-                    <li class="about__list__item"><a href="#">Estudios</a></li>
-                    <li class="about__list__item"><a href="#">Expeciencia</a></li>
+                    <li class="about__list__item"><a href="#first-view">¿Quien soy?</a></li>
+                    <li class="about__list__item"><a href="#about-me">habilidades</a></li>
+                    <li class="about__list__item"><a href="#hobbies">Hobbies</a></li>
+                    <li class="about__list__item"><a href="#academic">Estudios</a></li>
+                    <li class="about__list__item"><a href="#experience">Experiencia</a></li>
                 </ul>
             </div>
 
             <div id="contact">
-                <a href="#">instagram</a>
-                <a href="#">linkedin</a>
+                <a href="https://www.instagram.com/josevaldez2/" target="_blank">instagram</a>
+                <a href="https://www.linkedin.com/in/jos%C3%A9-valdez-122638195/" target="_blank">linkedin</a>
 
-                <a href="#">Trabajemos juntos</a>
+                <a href="#form">Trabajemos juntos</a>
             </div>
+
+            
         </nav>
+            <div id="mobile-navbar" class="navbar bg-light fixed-top visible">
+                <div class="container-fluid">
+                    <div class="logo typewriter">
+                        <div class="arrow"><img src="img/arrow-right.png" alt=""></div>
+                        <p>José Valdez</p>
+                        <div class="dev"><img src="img/dev-logo.png" alt=""></div>
+                    </div>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Te doy la bienvenida a mi espacio</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#first-view">¿Quien soy?</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link"  href="#about-me">habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="#academic">Estudios</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#experience">Experiencia</a>
+                          </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+
+        </div>
     </header>
     <!--end header-->
+
+    <!--start principal container-->
+    <main id="container">
+
+        <!--start first view. HeadLine. text to impress. Background image about tech with infinity carrousel-->
+    <section id="first-view">
+
+    </section>
+        <!--My photo, Presentation, who i am, age, native country, short long history of my life, purposes and goals-->
+    <section id="about-me">
+
+    </section>
+
+        <!--my skill's list. technologies logos, lenguages, soft skills, office skills-->
+    <section id="about-skills">
+
+    </section>
+        <!--videoGames, podcasts, book's reading, technology research, hardware, psicology-->
+    <section id="hobbies">
+
+    </section>
+    <!--Udo, UTN, Codo a codo, Argentina programa-->
+    <section id="academic">
+
+    </section>
+    <!--Freelance, managment experience-->
+    <section id="experience">
+
+    </section>
+
+</main>
+<!--end principal container-->
 
     <a href="#" class="to-up"><img src="img/arrow.png" alt=""></a>
     <script src="bootstrap/js/bootstrap.min.js"></script>

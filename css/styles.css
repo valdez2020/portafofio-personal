@@ -27,13 +27,18 @@ body{
 
 /****ARROW*****/
 .to-up{
-    position: absolute;
+    position: fixed;
     right: 30px;
     bottom: 30px;
     background-color: var(--color-bar);
     border-radius: 10px;
     width: 50px;
     height: 50px;
+    transition: .5s;
+}
+
+.to-up:hover{
+    border-radius: 25px;
 }
 /*DESKTOP VIEW*/
 #header{
@@ -46,19 +51,60 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.4em;
+    padding: 5px;
     color: rgb(23, 32, 101);
 }
 
-
-#logo p{
+/***LOGO Y SU ANIMACIÓN****/
+.logo{
+    display: flex;
+    flex-direction: row;
+}
+.logo p{
     display: inline-block;
     font-size: 1.4em;
-    padding: 14px 6px 0 6px;
+    padding: 14px 6px 0 4px;
     user-select: none;
-    
-
 }
+
+.arrow, .dev{
+    margin-top: 18px;
+}
+
+.arrow{
+    margin-right: -4px;
+}
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+  }
+
+  .visible{
+    display: none;
+  }
+/*****OPCIONES NAVBAR******/
+
+
+.typewriter {
+    overflow: hidden; 
+    border-right: .15em solid black;
+    white-space: nowrap;
+    margin: 0 10px auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 1.5s steps(35, end),
+      blink-caret .75s step-end 5;
+      border-right: .15em solid transparent;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 12%}
+  }
+
+/*******OPCIONES DE NAVBAR*******/
 #about__list{
     list-style: none;
     display: flex;
