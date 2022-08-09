@@ -1,0 +1,80 @@
+:root{
+    --color-backgrounds:#293462;
+    --color-bar:#EC9B3B;
+    --color-bottoms:#F24C4C;
+    --color-articules:#F7D716;
+}
+
+@media only screen and (max-width:1300px) {
+    #navbar-options {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 1198px) {
+    #header {
+        font-size: 1em;
+    }
+}
+
+
+@media only screen and (max-width: 1010px) {
+    #navbar {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 998px) {
+    #navbar {
+        padding: 0;
+        display: inline-block;
+        width: 100%;
+    }
+    #arrow, #dev{
+        display: inline-block;
+    }
+    .container-logo{
+        display: inline-block;
+        margin: 0 30%;
+    }
+    .logo{
+        justify-content: center;
+        font-size: 2em;
+    }
+    
+    .typewriter {
+        margin: 0 10px auto; 
+        animation: 
+          typing 1.5s steps(35, end),
+          blink-caret .75s step-end 4;
+          border-right: .15em solid transparent;
+      }
+     
+    
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100%}
+      }
+      #navbar-options{
+        display: flex;
+        justify-content: center;
+      }
+
+}
+
+@media only screen and (max-width: 870px) {
+    #navbar{
+        display: none;
+    }
+    #mobile-navbar{
+        display: block;
+        background-color: var(--color-bar);
+    }
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 40%}
+      }
+      .offcanvas{
+        background-color: var(--color-bar);
+      }
+    
+}

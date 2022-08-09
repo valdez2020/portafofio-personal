@@ -42,6 +42,8 @@ body{
 }
 /*DESKTOP VIEW*/
 #header{
+    position: absolute;
+    width: 100%;
     background-color: var(--color-bar);
     font-family: 'mukta';
     font-size: 1.2em;
@@ -49,13 +51,26 @@ body{
 
 #navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 5px;
     color: rgb(23, 32, 101);
 }
 
+#navbar-options{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+  }
+
+
+/***MOBILE VIEW***/
+
 /***LOGO Y SU ANIMACIÓN****/
+#mobile-navbar{
+    display: none;
+}
+
 .logo{
     display: flex;
     flex-direction: row;
@@ -84,8 +99,6 @@ body{
   .visible{
     display: none;
   }
-/*****OPCIONES NAVBAR******/
-
 
 .typewriter {
     overflow: hidden; 
@@ -101,7 +114,7 @@ body{
   
   @keyframes typing {
     from { width: 0 }
-    to { width: 12%}
+    to { width: 100%}
   }
 
 /*******OPCIONES DE NAVBAR*******/
@@ -146,3 +159,59 @@ background: -moz-linear-gradient(47deg,#f4ff00 10%, #ff00d0 70%);
     color: var(--color-articules);
     background-color: #293462;
 }
+
+/******FIRST VIEW******/
+#background-video video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.screen-transparent{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.805);
+    }
+
+    .first-view{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.first-view__content{
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        min-height: 30%;
+        font-family: 'vt323' ;
+        color: rgb(211, 113, 0);
+        text-shadow: 1px 1px #e41a1a;
+        border-radius: 10px;
+
+    }
+
+    .first-view__content-text{
+        display: none;
+    }
+
+    .first-view__content-title{
+        width:45%;
+        text-align: center;
+        font-size: 6rem;
+    
+    }

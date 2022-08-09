@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/mediaQueries.css">
     <title>Jose Valdez Dev</title>
 </head>
 <body>
@@ -15,13 +16,16 @@
     <!--start header-->
     <header id="header">
         <nav id="navbar">
-            <div class="logo typewriter">
+            <div class="container-logo">
+              <div class="logo typewriter">
                 <div class="arrow"><img src="img/arrow-right.png" alt=""></div>
                 <p>José Valdez</p>
                 <div class="dev"><img src="img/dev-logo.png" alt=""></div>
             </div>
+            </div>
+            <div id="navbar-options">
 
-            <div id="about">
+              <div id="about">
                 <ul id="about__list">
                     <li class="about__list__item"><a href="#first-view">¿Quien soy?</a></li>
                     <li class="about__list__item"><a href="#about-me">habilidades</a></li>
@@ -32,15 +36,16 @@
             </div>
 
             <div id="contact">
-                <a href="https://www.instagram.com/josevaldez2/" target="_blank">instagram</a>
-                <a href="https://www.linkedin.com/in/jos%C3%A9-valdez-122638195/" target="_blank">linkedin</a>
+                  <a href="https://www.instagram.com/josevaldez2/" target="_blank">instagram</a>
+                  <a href="https://www.linkedin.com/in/jos%C3%A9-valdez-122638195/" target="_blank">linkedin</a>
+                  <a href="#form">Trabajemos juntos</a>
 
-                <a href="#form">Trabajemos juntos</a>
             </div>
 
+            </div>
             
         </nav>
-            <div id="mobile-navbar" class="navbar bg-light fixed-top visible">
+            <div id="mobile-navbar" class="navbar fixed-top">
                 <div class="container-fluid">
                     <div class="logo typewriter">
                         <div class="arrow"><img src="img/arrow-right.png" alt=""></div>
@@ -85,7 +90,26 @@
 
         <!--start first view. HeadLine. text to impress. Background image about tech with infinity carrousel-->
     <section id="first-view">
+      <div id="background-video">
+            <video src="videos/red.mp4"autoplay loop ></video>
+      </div>
 
+          <div class="screen-transparent"></div>
+
+        <div class="first-view">
+            <div class="first-view__content">
+              <p class="first-view__content-text">
+                Este es mi espacio, dónde registro mi progreso y crecimiento como desarrollador...
+              </p>
+              <p class="first-view__content-text">
+                Te doy la bienvenida, eres libre de pasar...
+              </p>
+                <h1 class="first-view__content-title">
+                Desarrollo sin fronteras
+                </h1>
+              <p class="first-view__content-text">Si no hay camino, juntos lo crearemos</p>
+            </div>
+        </div>
     </section>
         <!--My photo, Presentation, who i am, age, native country, short long history of my life, purposes and goals-->
     <section id="about-me">
