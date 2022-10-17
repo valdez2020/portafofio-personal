@@ -23,7 +23,7 @@
     }
 }
 
-@media only screen and (max-width: 998px) {
+@media only screen and (max-width: 1000px) {
     #navbar {
         padding: 0;
         display: inline-block;
@@ -76,5 +76,18 @@
       .offcanvas{
         background-color: var(--color-bar);
       }
-    
+      .logo p {
+        font-size: 20px;
+        margin: 0;
+    }
+    .arrow, .dev{
+        margin-top: 4px;
+    }
+        
+}
+
+@media only screen and (max-width: 500px){
+    .first-view__content-text {
+        font-size: 1.4rem;
+    }
 }

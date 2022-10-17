@@ -266,7 +266,7 @@ background: -moz-linear-gradient(47deg,#f4ff00 10%, #ff00d0 70%);
 }
 
 #about-me .about-me{
-    background-color: var(--color-bar);
+    background-color: #1c1915d1;
     display: flex;
     flex-direction: row;
     
@@ -276,13 +276,16 @@ background: -moz-linear-gradient(47deg,#f4ff00 10%, #ff00d0 70%);
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content:center;
     padding-left: 50px;
+    color: rgb(211, 113, 0);    
+    text-shadow: 3px 3px #2e0000;
+    border-radius: 10px;
 
 }
 .about-me__text-content-h2{
     text-align: center;
-    font-size: 5em;
+    font-size: 3em;
     font-family: 'mukta';
 }
 .about-me__text-content-p{
@@ -299,17 +302,17 @@ background: -moz-linear-gradient(47deg,#f4ff00 10%, #ff00d0 70%);
 
 .card{
     background-color:#ffd968f5 ;
-    border-radius: 20px;
-    box-shadow: 2px 2px #293462, 5px 5px #000, -1px -1px #293462;
+    border-radius: 10px;
+    box-shadow: 2px 2px #f6f8ff, 5px 5px #b1b1b1, -1px -1px #706d65;
 }
 
 .card-body{
     background-color:#fcd254f5 ;
-    border-radius:  0 0 20px 20px;
+    border-radius:  0 0 1px 10px;
 
 }
 .card img{
-    border-radius: 20px 20px 5px 5px ;
+    border-radius: 10px 10px 5px 5px ;
     border:4px solid #000;
 }
 
@@ -323,4 +326,5 @@ background: -moz-linear-gradient(47deg,#f4ff00 10%, #ff00d0 70%);
     text-align: justify;
     padding: 10px;
 }
-/*#ffd968f5 */
+
+/***********************SKILLS SECTION***************************/
