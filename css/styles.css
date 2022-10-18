@@ -130,7 +130,7 @@ body{
 }
 #about__list a, #contact a{
     display:inline-block;
-    border-radius: 25px;
+    border-radius: 20px;
     padding: 10px;
     text-decoration: none;
     color: rgb(23, 32, 101);
@@ -138,8 +138,8 @@ body{
 }
 
 #about__list a:hover{
-    color: var(--color-articules);
-    background-color: #293462;
+    color: #1b1f8f;
+    background-color: #29346230;
 }
 
 #contact a:first-child:hover{
@@ -311,9 +311,14 @@ background: -moz-linear-gradient(47deg,#f4ff00 10%, #ff00d0 70%);
     border-radius:  0 0 1px 10px;
 
 }
+
 .card img{
     border-radius: 10px 10px 5px 5px ;
     border:4px solid #000;
+}
+
+.card-img-top{
+    height: 550px;
 }
 
 .card-title{
@@ -328,3 +333,38 @@ background: -moz-linear-gradient(47deg,#f4ff00 10%, #ff00d0 70%);
 }
 
 /***********************SKILLS SECTION***************************/
+
+#about-skills .about-skills{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.805);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3%;
+}
+
+.about-skills__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-skills__title{
+    width: 20%;
+    font-size: 4em;
+    font-family: 'vt323';
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(211, 113, 0);
+    text-shadow: 1px 1px #e41a1a;
+    border-bottom: 1px solid wheat;
+}
+
+.about-skills__item{
+    display: block;
+    width: 200px;
+    height: 300px;
+    background-color: #000;
+    border:1px solid white;
+}
