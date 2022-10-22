@@ -5,6 +5,7 @@
     --color-articules:#F7D716;
 }
 
+
 @media only screen and (max-width:1300px) {
     #navbar-options {
         width: 90%;
@@ -87,7 +88,38 @@
 }
 
 @media only screen and (max-width: 500px){
-    .first-view__content-text {
-        font-size: 1.4rem;
+    .screen-transparent{
+        width: 100vw;
     }
+    .first-view__content {
+        width: 90%;
+
+    }
+    .first-view__content-text {
+        font-size: 1.6em;
+    }
+    .about-skills__title {
+        width: 60%;
+        font-size: 2em;
+    }
+    #about-me .about-me{
+        flex-direction: column;
+    }
+    .about-me__text{
+        width: 99%;
+    }
+    .about-me__text-content-h2 {
+        font-size: 1.2em;
+    }
+    .about-me__text-content-p {
+        font-size: .8em;
+    }
+    .about-me__text {
+        padding-left: 0;
+        padding: 15px;
+    }
+    .about-me__img{
+        width: 100%;
+    }
+
 }

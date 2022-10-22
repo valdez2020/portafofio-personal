@@ -8,7 +8,6 @@ arrow.addEventListener("click",() => {
     },1000);
 })
 
-
 //Intervalos en animación de presentación
 
 
@@ -27,4 +26,6 @@ const show = () =>{
 }
 
 
-window.setTimeout(show,4000);
+window.setTimeout(show,5000);
+
+
