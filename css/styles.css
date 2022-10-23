@@ -270,6 +270,7 @@ background: -moz-linear-gradient(47deg,#f4ff00 10%, #ff00d0 70%);
     animation-duration: 4s;
 }
     /*****FIN ANIMACION ******/
+
     /*****************INICIO SECCION ¿QUIEN SOY?******************/
 #about-me .about-me{
     background-color: #1c1915d1;
@@ -299,8 +300,6 @@ background: -moz-linear-gradient(47deg,#f4ff00 10%, #ff00d0 70%);
     text-align: justify;
     font-size: 1.4em;
 }
-
-
 
 .about-me__img{
     width: 50%;
@@ -386,7 +385,7 @@ background: -moz-linear-gradient(47deg,#f4ff00 10%, #ff00d0 70%);
     margin: 0 auto;
     margin-bottom: 50px;
     color: #ff8a00;
-    text-shadow: 1px 1px #e41a1a;
+    text-shadow: 2px 2px #e41a1a;
     border-bottom: 1px solid wheat;
 }
 
@@ -476,6 +475,7 @@ margin-bottom: 30px;
 font-size: 3em;
 color: #ff8a00;
 text-shadow: 1px 1px #e41a1a;
+
 }
 
 .academic-card, .experience-card{
@@ -484,10 +484,96 @@ text-shadow: 1px 1px #e41a1a;
     color: #ff8a00;
 text-shadow: 1px 1px #e41a1a;
 }
+
 .academic-card a, .experience-card a{
 text-decoration: none;
 color: whitesmoke;
 }
+
 .academic-card h4, .experience-card h4{
 color: var(--color-bottoms);
+}
+
+/****************SECCION DE PROYECTOS*****************/
+#projects{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.805);
+
+}
+
+#projects h1{
+    font-family:'vt323';
+    font-size: 4em;
+    color: #ff8a00;
+    text-shadow: 2px 2px #e41a1a;
+    border-bottom: 1px solid wheat;
+}
+.projects__container{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+  
+    grid-auto-rows: 250px;
+    padding: 30px;
+    gap :20px;
+
+}
+
+.project__item{
+    /*le ponemos posicion relativa para poder posicionar los textos*/
+position: relative;
+    cursor: pointer;
+}
+
+
+
+.project__item__image, .project__item__card{
+    width: 100%;
+    height: 100%;
+    /*esta propiedad sirve para que la imagen no se distorcione con respecto a su ancho*/
+    object-fit: fill;
+    transition-duration: .5s;
+}
+.project__item__card-second{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #1b8f83a6;
+    opacity: 0;
+    transition-duration: 0.6s;
+}
+.project__item__card-second a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.project__item:hover .project__item__card-second{
+    opacity: 1;
+}
+
+
+.project__item__title{
+    width: 100%;
+    bottom :-4px;
+    margin:0;
+    padding: 10px;
+    text-align: center;
+    color: #ff8a00;
+    text-shadow: 2px 2px #e41a1a;
+}
+
+.project__item__card-second p{
+    display: block;
+    padding: 10px;
+    font-size: 1.5em;
+    font-family:'mukta';
+    color: #ff8a00;
+    text-shadow: 1px 1px #e41a1a;
 }

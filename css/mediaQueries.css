@@ -141,6 +141,12 @@
     .display{
         display: none;
     }
+    
+    /****galeria****/
+
+    .projects__container{
+        grid-template-columns: repeat(2 , 1fr);  
+    }
 
 }
 
@@ -151,4 +157,6 @@
     .display{
         display: block;
     }
+
+
 }
