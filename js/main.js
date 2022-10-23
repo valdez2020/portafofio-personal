@@ -24,7 +24,23 @@ const show = () =>{
     let parrafo_1 = document.getElementById('p-1');
         parrafo_1.classList.remove(clase_1);
 }
+/*
 
+let texto = [parrafo_2,parrafo_3,titulo];
+let clases = ['flicker-in-1','flicker-out-1','text-focus-in'];
+
+
+const show = () =>{
+    for(let i = 0;i<=3;i++){
+
+
+    let parrafo = document.getElementById('p-'+ toString(i));
+    parrafo.classList.remove(clases(i));
+    }
+    alert("hola");
+}
+
+*/
 
 window.setTimeout(show,5000);
 

@@ -151,18 +151,18 @@ background: -moz-linear-gradient(47deg,#f4ff00 10%, #ff00d0 70%);
 }
 
 #contact a:nth-child(2):hover{
-    color:whitesmoke ;
+    color:rgb(224, 224, 224) ;
     background-color: hsl(210deg 90% 40%);
 }
 
 #contact a:last-child:hover{
-    color: var(--color-articules);
-    background-color: #293462;
+    color: rgb(194, 194, 194);
+    background-color: #000000;
 }
 
 /******FIRST VIEW******/
 .complete-view{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -254,6 +254,7 @@ background: -moz-linear-gradient(47deg,#f4ff00 10%, #ff00d0 70%);
     animation-duration: 4s;
  }
  .flicker-in-2{
+    display: block;
     animation-name: flicker-in-2;
     animation-duration: 4s;
  }
@@ -268,7 +269,8 @@ background: -moz-linear-gradient(47deg,#f4ff00 10%, #ff00d0 70%);
     animation-name: text-focus-in;
     animation-duration: 4s;
 }
-
+    /*****FIN ANIMACION ******/
+    /*****************INICIO SECCION ¿QUIEN SOY?******************/
 #about-me .about-me{
     background-color: #1c1915d1;
     display: flex;
@@ -346,7 +348,9 @@ background: -moz-linear-gradient(47deg,#f4ff00 10%, #ff00d0 70%);
     text-align: justify;
     padding: 10px;
 }
+    /*****************FIN SECCION ¿QUIEN SOY?******************/
 
+    
 /***********************SKILLS SECTION***************************/
 
 #about-skills{
@@ -393,6 +397,7 @@ background: -moz-linear-gradient(47deg,#f4ff00 10%, #ff00d0 70%);
     background-color: #1b8f8430;
     border-radius: 25px;
 }
+/***********************FIN SKILLS SECTION***************************/
 
 /**********ICONOS SECCIÓN TECNOLOGÍAS, IMPLEMENTACIÓN DE SVG***********/
 .i-container{
@@ -448,3 +453,41 @@ section h3{
 }
 
 /****************SECCION HOBBIES******************/
+
+
+/****************FIN SECCION HOBBIES******************/
+/*******************SECCION EDUCACION Y EXPERIENCIA*****************/
+#knowledge{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1915d1;
+    font-family: 'vt323';
+}
+
+.row {
+    --bs-gutter-x:0;
+}
+
+.academic-cards__container h3, .experience-cards__container h3{
+margin-bottom: 30px;
+font-size: 3em;
+color: #ff8a00;
+text-shadow: 1px 1px #e41a1a;
+}
+
+.academic-card, .experience-card{
+    padding: 0 15px;
+    font-size: 1.2em;
+    color: #ff8a00;
+text-shadow: 1px 1px #e41a1a;
+}
+.academic-card a, .experience-card a{
+text-decoration: none;
+color: whitesmoke;
+}
+.academic-card h4, .experience-card h4{
+color: var(--color-bottoms);
+}
