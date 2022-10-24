@@ -42,6 +42,5 @@ const show = () =>{
 
 */
 
-window.setTimeout(show,5000);
 
 

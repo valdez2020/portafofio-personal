@@ -15,6 +15,24 @@
     #header {
         font-size: 1em;
     }
+    .about-me__text-content-h2 {
+        font-size: 2em;
+    }
+    .about-me__text-content-p {
+        font-size: 1em;
+    }
+    .card img {
+        height: 343px;
+    }
+    div .card {
+        width: 22rem !important;
+    }
+    .about-skills__item {
+        margin: 20px;
+    }
+    .about-skills__title {
+        width: 38%;
+    }
 }
 
 
@@ -59,6 +77,7 @@
         display: flex;
         justify-content: center;
       }
+
 
 }
 
