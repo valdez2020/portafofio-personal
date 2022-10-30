@@ -33,6 +33,16 @@
     .about-skills__title {
         width: 38%;
     }
+
+}
+
+@media only screen and (max-width: 1021px) {
+    #about-skills {
+        height: 1200px;
+    }
+    #projects {
+        height: 1300px;
+    }
 }
 
 
@@ -139,7 +149,7 @@
         padding: 15px;
     }
     .complete-view {
-        height: 30vh;
+        height: 527px;
     }
     .about-me__img{
         width: 100%;
@@ -169,6 +179,31 @@
 
 }
 
+@media only screen and (max-width: 765px){
+    .about-me__img-container {
+        width: 80%;
+    }
+    .card img {
+        height: 222px;
+    }
+    .card-text:last-child {
+        font-size: 13px;
+    }
+    #about-skills {
+        height: 1464px;
+    }
+    .about-skills__title {
+        font-size: 3em;
+    }
+    .about-skills__container {
+        align-content: flex-end;
+        justify-content: center;
+    }
+    #knowledge {
+        height: 1300px;
+    }
+}
+
 @media only screen and (min-width: 700px){
     #about-me .about-me {
         flex-direction: row;
@@ -178,4 +213,39 @@
     }
 
 
+}
+
+@media only screen and (max-width: 510px){
+    .about-skills__item {
+        margin: 12px;
+    }
+    .about-skills__item {
+        padding-top: 32px;
+        width: 170px;
+        height: 242px;
+    }
+}
+
+@media only screen and (max-width: 412px){
+    .about-skills__item {
+        margin: 12px;
+    }
+    .about-skills__item {
+        padding-top: 32px;
+        width: 170px;
+        height: 242px;
+    }
+    .about-skills__container {
+        justify-content: space-evenly;
+    }
+    .about-skills__item {
+        width: 144px;
+        height: 230px;
+    }
+    #knowledge {
+        height: 1427px;
+    }
+    #projects h1 {
+        text-align: center;
+    }
 }
