@@ -6,10 +6,11 @@
 }
 
 
-@media only screen and (max-width:1300px) {
+@media only screen and (max-width:1300px){
     #navbar-options {
         width: 90%;
     }
+    
 }
 @media only screen and (max-width: 1198px) {
     #header {
@@ -153,7 +154,6 @@
     }
     .about-me__img{
         width: 100%;
-        height: 62vh;
     }
     .about-me__img-container{
         width:83%;
@@ -230,10 +230,21 @@
     .about-skills__item {
         margin: 12px;
     }
+    .complete-view {
+        height: 295px;
+    }
     .about-skills__item {
         padding-top: 32px;
         width: 170px;
         height: 242px;
+    }
+    .about-me__img {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .about-me__text {
+        justify-content: end;
+        padding: 0 15px;
     }
     .about-skills__container {
         justify-content: space-evenly;
@@ -242,10 +253,54 @@
         width: 144px;
         height: 230px;
     }
-    #knowledge {
-        height: 1427px;
+    #projects {
+        height: 1084px;
     }
     #projects h1 {
         text-align: center;
+        font-size: 3em;
     }
+    .projects__container {
+        grid-auto-rows: 186px;
+    }
+}
+/***********    SOLUCIÓN PROBLEMA POSICIÓN HORIZONTAL EN MOBILE     ***********/
+
+@media only screen and (max-height: 450px) and (max-width: 900px){
+    #navbar{
+        display: none;
+    }
+    #mobile-navbar{
+        display: block;
+        background-color: var(--color-bar);
+    }
+    .first-view__content-text {
+        font-size: 1.8rem;
+    }
+    .about-me__text {
+        padding-left: 22px;
+    }
+    .card img {
+        height: 270px;
+    }
+    .about-me__text-content-h2 {
+        font-size: 1.2em;
+    }
+    .logo p {
+        font-size: .8em;
+        padding: 8px 6px 0 4px;
+    }
+    .card-title, .card-text{
+        display: none;
+    }
+    .arrow, .dev{
+        margin-top: 0;
+    }
+    .navbar{
+        padding: 0;
+    }
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 33%}
+      }
 }
