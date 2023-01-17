@@ -233,10 +233,8 @@
     .complete-view {
         height: 295px;
     }
-    .about-skills__item {
-        padding-top: 32px;
-        width: 170px;
-        height: 242px;
+    #about-skills {
+        height: 728px;
     }
     .about-me__img {
         width: 100%;
@@ -249,9 +247,17 @@
     .about-skills__container {
         justify-content: space-evenly;
     }
+    .about-skills {
+    justify-content: flex-start;
+    }
+    .about-skills__title {
+        width: 76%;
+        margin-top: 20px;
+    }
     .about-skills__item {
-        width: 144px;
-        height: 230px;
+        width: 90px;
+        height: 146px;
+        margin: 20px 0;
     }
     #projects {
         height: 1084px;
@@ -262,6 +268,12 @@
     }
     .projects__container {
         grid-auto-rows: 186px;
+    }
+    [class*="icon-"] {
+        font-size: 1.7em;
+    }
+    section h3{
+        font-size: 18px;
     }
 }
 /***********    SOLUCIÓN PROBLEMA POSICIÓN HORIZONTAL EN MOBILE     ***********/
