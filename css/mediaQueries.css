@@ -51,6 +51,9 @@
     #navbar {
         padding: 0;
     }
+    #knowledge {
+        height: 900px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -92,7 +95,8 @@
 
 }
 
-@media only screen and (max-width: 870px) {
+
+@media only screen and (max-width: 870px){
     #navbar{
         display: none;
     }
@@ -115,10 +119,6 @@
         margin-top: 4px;
     }
         
-}
-
-
-@media only screen and (max-width: 870px){
     .screen-transparent{
         width: 100vw;
     }
@@ -179,6 +179,10 @@
 
 }
 
+@media only screen and (max-width: 790px){
+
+}
+
 @media only screen and (max-width: 765px){
     .about-me__img-container {
         width: 80%;
@@ -215,18 +219,11 @@
 
 }
 
-@media only screen and (max-width: 510px){
-    .about-skills__item {
-        margin: 12px;
-    }
-    .about-skills__item {
-        padding-top: 32px;
-        width: 170px;
-        height: 242px;
-    }
-}
 
-@media only screen and (max-width: 412px){
+@media only screen and (max-width: 699px){
+    .i-container {
+        padding: 0px;
+    }
     .about-skills__item {
         margin: 12px;
     }
@@ -247,6 +244,10 @@
     .about-skills__container {
         justify-content: space-evenly;
     }
+    .projects__container {
+        grid-template-columns: repeat(3 , 1fr);
+        gap: 13px;
+    }
     .about-skills {
     justify-content: flex-start;
     }
@@ -260,14 +261,14 @@
         margin: 20px 0;
     }
     #projects {
-        height: 1084px;
+        height: 643px;
     }
     #projects h1 {
         text-align: center;
-        font-size: 3em;
+        font-size: 2em;
     }
     .projects__container {
-        grid-auto-rows: 186px;
+        grid-auto-rows: 130px;
     }
     [class*="icon-"] {
         font-size: 1.7em;
@@ -275,6 +276,31 @@
     section h3{
         font-size: 18px;
     }
+    #knowledge {
+        height: 1100px;
+    }
+    .academic-cards__container h3, .experience-cards__container h3 {
+        font-size: 2em;
+    }
+    .h4, h4 {
+        font-size: calc(1rem + .3vw);
+    }
+    .academic-card, .experience-card {
+        font-size: 1em;
+    }
+    .about-skills__title {
+        font-size: 2em;
+    }
+    div .project__item__card-second{
+        display: none;
+      }
+    
+      @media only screen  and (max-width:358px){
+        #knowledge {
+            height: 1200px;
+        }
+      }
+
 }
 /***********    SOLUCIÓN PROBLEMA POSICIÓN HORIZONTAL EN MOBILE     ***********/
 
@@ -315,4 +341,7 @@
         from { width: 0 }
         to { width: 33%}
       }
+
+
 }
+
