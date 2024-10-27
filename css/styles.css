@@ -142,15 +142,8 @@ body{
     background-color: #29346230;
 }
 
-#contact a:first-child:hover{
-    color: aliceblue;
-    background: #f4ff00;
-background: linear-gradient(47deg,#f4ff00 10%, #ff00d0 70%);
-background: -webkit-linear-gradient(47deg,#f4ff00 10%, #ff00d0 70%);
-background: -moz-linear-gradient(47deg,#f4ff00 10%, #ff00d0 70%);
-}
 
-#contact a:nth-child(2):hover{
+#contact a:first-child:hover{
     color:rgb(224, 224, 224) ;
     background-color: hsl(210deg 90% 40%);
 }
@@ -196,6 +189,7 @@ background: -moz-linear-gradient(47deg,#f4ff00 10%, #ff00d0 70%);
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: #1c1915d1;
     }
 .first-view__content{
         text-transform: uppercase;
